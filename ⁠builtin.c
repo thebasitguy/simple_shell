@@ -2,8 +2,9 @@
 
 /**
  * _myexit - exits the shell
+ * 
  * @info: pointer to a structure
- *
+ * 
  * Return: -2 to tell the shell to exit
  */
 
@@ -11,7 +12,7 @@ int _myexit(info_t *info)
 {
 	int exitcheck;
 
-	if (info->argv[1])
+	if (info->argv[1])  /* If there is an exit arguement */
 	{
 		exitcheck = _erratoi(info->argv[1]);
 		if (exitcheck == -1)
@@ -31,8 +32,9 @@ int _myexit(info_t *info)
 
 /**
  * _mycd - changes the current directory of the shell process
+ * 
  * @info: pointer to a structure
- *
+ * 
  * Return: Always 0
  */
 
@@ -82,11 +84,11 @@ int _mycd(info_t *info)
 
 /**
  * _myhelp - changes current directory of the shell process
+ * 
  * @info: pointer to a structure
- *
+ * 
  *  Return: Always 0
  */
-
 int _myhelp(info_t *info)
 {
 	char **arg_array;
