@@ -1,7 +1,7 @@
-#ifndef SHELL_H
-#define SHELL_H
+#ifndef _SHELL_H_
+#define _SHELL_H_
 
-#include <time.h>
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
