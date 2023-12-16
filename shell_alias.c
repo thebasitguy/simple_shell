@@ -1,4 +1,4 @@
-i#include "shell_headers.h"
+#include "shell_headers.h"
 
 /**
  * show_history - shows the history list, displaying each command

@@ -16,7 +16,7 @@ int hsh(info_t *shell_info, char **av)
 
 	while (r != -1 && builtin_ret != -2)
 	{
-		clear_info(shell_info);
+		info_clear(shell_info);
 		if (is_interactive(shell_info))
 			str_print("$ ");
 		buffered_putchar(BUF_FLUSH);
